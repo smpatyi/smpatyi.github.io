@@ -1,3 +1,37 @@
+body {
+    margin: 0px;
+}
+
+.menu-bar {
+    width: 100%;
+}
+
+.menu-bar button {
+    width: 25%;
+    border: 1px solid #084f2e; /* Green border */
+    color: #7da493; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    background-color:rgba(4, 58, 33);
+}
+  
+.menu-bar button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+  
+/* Clear floats (clearfix hack) */
+.menu-bar:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Add a background color on hover */
+.menu-bar button:hover {
+    background-color: rgb(3, 46, 26);
+}
+
 #about-me {
     position: relative;
     background-image: linear-gradient(to bottom right, rgba(4, 58, 33, 0.75), rgba(5, 69, 92, 0.95)), url('cool-background.png');
@@ -28,21 +62,20 @@
     padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-image: linear-gradient(to bottom right, rgba(3, 46, 26, 0.65), rgba(4, 59, 79, 0.85))
+    background-image: linear-gradient(to bottom right, rgba(3, 46, 26, 0.45), rgba(4, 59, 79, 0.65))
 }
 
-.self-intro
-{
+.self-intro {
     padding-left: 37%;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #7da493;
+    font-size: 1.27vw;
     font-weight: bold;
     position: absolute;
 }
 
 .self-intro p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
     font-weight: 50;
 }
