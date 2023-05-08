@@ -10,6 +10,7 @@ body {
     width: 25%;
     border: 1px solid #084f2e; /* Green border */
     color: #7da493; /* White text */
+    font-size: 1.15vw;
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
