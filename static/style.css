@@ -1,0 +1,39 @@
+#header {
+    /* background-image: linear-gradient(to bottom right, rgba(4, 58, 33, 0.5), rgba(5, 69, 92, 0.6)), url('images/cool-background.png'); */
+    background-image:
+    linear-gradient(to bottom right, rgba(4, 58, 33, 0.5), rgba(5, 69, 92, 0.6)),
+    url('images/cool-background.png');
+    height: 80vh;
+    width: 100%;
+}
+
+.pic {
+    top: 41.5%;
+    left: 20%;
+    display: inline-flex;
+    transform: translate(-12%, -50%);
+    position: absolute;
+}
+
+.pic img {
+    border-radius: 35%;
+    width: 30%;
+    border: 2px solid #084f2e;
+    flex-basis: 30%;
+}
+
+.self-intro
+{
+    padding-left: 7%;
+    padding-top: 2%;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7da493;
+    font-weight: bold;
+}
+
+.self-intro p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 50;
+}
