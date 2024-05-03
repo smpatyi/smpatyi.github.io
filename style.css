@@ -34,9 +34,25 @@ body {
     background-color: rgb(3, 46, 26);
 }
 
+/* working on trying to get the same sort of overlay effect for the social contact buttons */
+/* .contact {
+    width: 100%;
+    align-content: center;
+} */
+
+/* .contact button {
+    width: 25%;
+    border: 1px solid #084f2e;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    background-color:rgba(4, 58, 33);
+    opacity: 65%;
+} */
+
 #about-me {
     position: relative;
-    background-image: linear-gradient(to bottom right, rgba(4, 58, 33, 0.75), rgba(5, 69, 92, 0.95)), url('cool-background.png');
+    background-image: linear-gradient(to bottom right, rgba(4, 58, 33, 0.75), rgba(5, 69, 92, 0.95)), url('static/cool-background.png');
     height: 100%;
     width: 100%;
 }
