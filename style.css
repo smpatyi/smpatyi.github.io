@@ -2,10 +2,6 @@ body {
     margin: 0px;
 }
 
-.menu-bar {
-    width: 100%;
-}
-
 .menu-bar button {
     width: 25%;
     border: 1px solid #084f2e; /* Green border */
@@ -16,6 +12,12 @@ body {
     float: left; /* Float the buttons side by side */
     background-color:rgba(4, 58, 33);
     opacity: 65%;
+}
+
+.menu-bar {
+    width: 100%;
+    position: relative;
+    display: inline-block;
 }
   
 .menu-bar button:not(:last-child) {
@@ -28,27 +30,62 @@ body {
     clear: both;
     display: table;
 }
-  
+
+.club-content {
+    display: none;
+    position: absolute;
+    background-color: #084f2e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.club-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.club-content a:hover {
+    background-color: #7da493;
+}
+
+.menu-bar:hover .club-content {
+    display: block;
+}
+
 /* Add a background color on hover */
 .menu-bar button:hover {
     background-color: rgb(3, 46, 26);
 }
 
-/* working on trying to get the same sort of overlay effect for the social contact buttons */
-/* .contact {
-    width: 100%;
-    align-content: center;
-} */
 
-/* .contact button {
-    width: 25%;
-    border: 1px solid #084f2e;
-    padding: 10px 24px;
-    cursor: pointer;
-    float: left;
-    background-color:rgba(4, 58, 33);
-    opacity: 65%;
-} */
+/* working on trying to get the same sort of overlay effect for the social contact buttons */
+.contact {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.fa {
+    border-radius: 20%;
+    padding: 5px;
+    font-size: 30px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 70%;
+}
+
+.fa-linkedin {
+    background:#084f2e;
+    color: white;
+}
 
 #about-me {
     position: relative;
